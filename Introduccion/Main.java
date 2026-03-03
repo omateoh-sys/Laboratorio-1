@@ -34,7 +34,7 @@ public class Main {
         }
         }
         public static void mostrarMenu1() {
-        	System.out.println("\n1. Agregar estudiantes \n2. Mostrar lista de Estudiantes\n3. Calcular premedio\n4. Calificacion mas alta\n5. Eliminar Estudiante \n6. Salir");
+        	System.out.println("\n1. Agregar estudiantes \n2. Mostrar lista de Estudiantes\n3. Calcular premedio\n4. Calificacion mas alta\n5. Buscar Estudiante \n6. Salir");
         }
         	
         	public static void agregarEstudiante1() {
@@ -105,7 +105,9 @@ public class Main {
         	    			System.out.println("Error: Ingrese un Valor Numerico.");
         	    		}
         	    	}
+        	    	}
         	    	public static void buscarEstudiante() {
+
         	    	    if (estudiantes.isEmpty()) {
         	    	        System.out.println("No hay estudiantes registrados.");
         	    	        return;
@@ -114,6 +116,8 @@ public class Main {
         	    	    System.out.print("Ingrese el nombre del estudiante a buscar: ");
         	    	    String nombreBuscar = scanner.nextLine();
 
+        	    	    boolean encontrado = false;
+
         	    	    for (int i = 0; i < estudiantes.size(); i++) {
         	    	        if (estudiantes.get(i).equalsIgnoreCase(nombreBuscar)) {
 
@@ -121,9 +125,16 @@ public class Main {
         	    	            System.out.println("Nombre: " + estudiantes.get(i));
         	    	            System.out.println("Calificación: " + calificaciones.get(i));
 
+        	    	            encontrado = true;
+        	    	            break;
         	    	        }
         	    	    }
-        	    	
+
+        	    	    if (!encontrado) {
+        	    	        System.out.println("Estudiante no encontrado.");
+        	    	    }
+        	    	}
+        	    
         	    }
-        	  }
+        	  
         	    	
