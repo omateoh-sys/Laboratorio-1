@@ -22,7 +22,7 @@ public class Main {
         	case 1: agregarEstudiante1(); break;
         	case 2: mostrarLista1(); break;
         	case 3: calcularPromedio1(); break;
-        	case 4: agregarEstudiante1(); break;
+        	case 4: mostrarEstudianteMasAlto(); break;
         	case 5: 
         		System.out.println("Saliendo del Sistema...");
         		salir = true;
