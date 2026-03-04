@@ -32,10 +32,15 @@ Si se modifica por varias personas es muy difícil encontrar errores.
 
 # 3 Validaciones y Manejo de Excepciones
 Las validaciones agregadas try catch para leer entero y double evita que el programa se caiga si se ingresa letras en lugar de números.
+
 Así mismo la validación de rango de calificaciones 0 a 10 esta con un if y else para que no haya errores a la hora de que el usuario ingrese su calificación.
+
 Estas son importantes ya que si no lo tuvieran el programa se cae cuando se le ingresan datos que son erróneos, y con esto ya podemos reingresar datos asta que cumplan con lo requerido.
+
 Como los métodos mostrarLista1, calcularPromedio, y mostrarEstudianteMasAlto ya incluía la verificación if para evitar errores si la lista estaba vacia, solo se adapto de manera que funcionara bien a la hora de ejecutar el código modificado.
+
 Agregamos el método buscarEstudiante para practicar un poco más la relación de métodos y variables locales este método sirve para buscar los estudiantes registrados y así mismo que verifique si el estudiante esta registrado, usamos una variable booleana para el control de flujo encontrado.
+
 # 4 Preguntas de reflexión 
 -¿Qué ventajas tiene dividir el código en métodos?
 
