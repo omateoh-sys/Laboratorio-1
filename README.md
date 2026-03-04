@@ -39,8 +39,10 @@ Agregamos el método buscarEstudiante para practicar un poco más la relación d
 # 4 Preguntas de reflexión 
 -¿Qué ventajas tiene dividir el código en métodos?
 Por lo que ya hemos trabajo y observado influye y da mucha ventaja en la organización del código, ayudando a entender mejor su lógica y cómo funciona, así mismo usando métodos nos permite reutilizar el código en proyectos futuros. 
+
 -¿Por qué no es recomendable usar muchas variables locales?
 Porque esto en alguna ocasión puede generar que se dificulte más encontrar un error entre métodos ya que genera que dependan unos de otros.
+
 -¿Cómo mejorar la modularización y la legibilidad?
 Se observa y aprende como cada método tiene un propósito de ser y hacer en el código, además que nos ayuda a entender el flujo de ejecución en el código.
 
